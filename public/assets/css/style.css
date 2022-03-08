@@ -1,0 +1,251 @@
+.btn-main {
+  background: #4c27b3;
+  color: white;
+}
+.btn-main:hover {
+  color: white;
+}
+.outline-main {
+  border: 1px solid#4c27b3;
+}
+.color-main {
+  color: #4c27b3;
+}
+.btn-outline-main {
+  border: 1px solid #4c27b3;
+}
+.passwordToggle {
+  margin-left: -35px;
+  z-index: 1;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.bg-main {
+  background-color: #4c27b3;
+}
+bg-dark-nav {
+  background: #3d199f;
+}
+.active-nav {
+  background: #3f16af;
+}
+@media only screen and (max-width: 600px) {
+  .user-role {
+    flex-direction: column;
+  }
+  .search-bar {
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.border-main {
+  border: 1px solid #4c27b3;
+}
+body {
+  font-family: Helvetica;
+}
+.icon-size {
+  font-size: 4rem;
+}
+a {
+  color: #4c27b3;
+}
+.custom-checkbox {
+  background: #4c27b3;
+  color: white;
+  cursor: pointer;
+}
+
+.drop-zone-new {
+  max-width: 200px;
+  height: 200px;
+  padding: 25px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.drop-zone--over {
+  border-style: solid;
+}
+
+.drop-zone__input {
+  display: none;
+}
+
+.drop-zone__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #cccccc;
+  background-size: cover;
+  position: relative;
+}
+
+.drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  text-align: center;
+}
+
+body {
+  font-family: sans-serif;
+}
+a {
+  color: #369;
+}
+.note {
+  width: 500px;
+  margin: 50px auto;
+  font-size: 1.1em;
+  color: #333;
+  text-align: justify;
+}
+#drop-area {
+  border: 2px dashed #ccc;
+  border-radius: 20px;
+  width: 480px;
+  margin: 50px auto;
+  padding: 20px;
+}
+#drop-area.highlight {
+  border-color: purple;
+}
+p {
+  margin-top: 0;
+}
+.my-form {
+  margin-bottom: 10px;
+}
+#gallery {
+  margin-top: 10px;
+}
+#gallery img {
+  width: 150px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.button {
+  display: inline-block;
+  padding: 10px;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.button:hover {
+  background: #ddd;
+}
+#fileElem {
+  display: none;
+}
+
+
+#sidebar ul li a {
+  padding:10px 30px 10px 20px;
+  font-size: 1.1em;
+  display: block;
+}
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+
+#sidebar .dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+#sidebar .item{
+  margin-left: 5px;
+}
+
+#sidebar ul li a:hover {
+  background: #792ddd;
+}
+
+
+.dot-flashing {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #4c27b3;
+  color: #4c27b3;
+  -webkit-animation: dot-flashing 1s infinite linear alternate;
+  animation: dot-flashing 1s infinite linear alternate;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.dot-flashing::before, .dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+.dot-flashing::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  -webkit-animation: dot-flashing 1s infinite alternate;
+  animation: dot-flashing 1s infinite alternate;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.dot-flashing::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  -webkit-animation: dot-flashing 1s infinite alternate;
+  animation: dot-flashing 1s infinite alternate;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes dot-flashing {
+  0% {
+    background-color: #9880ff;
+  }
+  50%, 100% {
+    background-color: rgba(152, 128, 255, 0.2);
+  }
+}
+
+@keyframes dot-flashing {
+  0% {
+    background-color: #9880ff;
+  }
+  50%, 100% {
+    background-color: rgba(152, 128, 255, 0.2);
+  }
+}
+.add-btn{
+  cursor: pointer;
+}
